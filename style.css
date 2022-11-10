@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background: radial-gradient(rgba(255, 255, 255, 0.739), rgba(1, 62, 100, 0.878));
+}
+
+.container {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+/***************************/
+
+/**** Calculator ****/
+
+/* Box Design */
+
+.box {
+    margin: 70px auto;
+    height: 600px;
+    width: 600px;
+    border: 3px solid black;
+    border-radius: 50%;
+    box-shadow: 3px 5px 10px black;
+    background: radial-gradient(rgba(255, 255, 255, 0.841), rgba(0, 0, 0, 0.878));
+}
+
+/* Logo */
+
+.logo {
+    margin-top: 35px;
+    text-align: center;
+}
+
+.logo img {
+    width: 280px;
+}
+
+/* Display */
+
+.display {
+    margin: 0 auto;
+    width: 350px;
+    height: 50px;
+    border: 1px solid black;
+    background: radial-gradient(rgba(136, 138, 135, 0.777), rgb(105,105,79));
+}
+
+#display {
+    font-size: 40px;
+    text-align: right;
+    padding-right: 15px;
+}
+
+/* Buttons Style */
+
+.btn {
+    text-align: center;
+}
+
+.btn button {
+    cursor: pointer;
+    font-size: 25px;
+    padding: 10px 10px;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    margin: 10px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: black;
+    color: white;
+    background: radial-gradient(white, rgb(227, 226, 226));
+    outline: none;
+}
+
+.first_line {
+    margin-top: 25px;
+}
