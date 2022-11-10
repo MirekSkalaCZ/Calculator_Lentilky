@@ -34,11 +34,6 @@ for(let i = 0; i <= 2; i++){
     
 }
 
-/* Calling Functions */
-
-reset();
-
-equal();
 
 
 

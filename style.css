@@ -70,6 +70,10 @@ body {
     text-align: center;
 }
 
+.btn sup {
+    font-size: 40%;
+}
+
 .btn button {
     cursor: pointer;
     font-size: 25px;
