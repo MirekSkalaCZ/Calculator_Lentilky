@@ -46,11 +46,15 @@ body {
 /* Display */
 
 .display {
-    margin: 0 auto;
+    text-align: center;    
+}
+
+.display input {
     width: 350px;
     height: 50px;
     border: 1px solid black;
     background: radial-gradient(rgba(136, 138, 135, 0.777), rgb(105,105,79));
+    outline: none;
 }
 
 #display {
@@ -74,7 +78,7 @@ body {
     width: 50px;
     height: 50px;
     margin: 10px;
-    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-width: 2px;
     -webkit-text-stroke-color: black;
     color: white;
     background: radial-gradient(white, rgb(227, 226, 226));

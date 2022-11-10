@@ -15,7 +15,7 @@ let btn_equal = document.getElementById("btn_equal");
 function reset(){
 
     btn_reset.addEventListener("click", function(){
-        display.innerText = "0";
+        display.value = "0";
     })
 
 }
@@ -25,7 +25,7 @@ function reset(){
 function equal(){
 
     btn_equal.addEventListener("click", function(){
-        display.innerText += "=";
+        display.value = eval(display.value);
     })
 
 }
@@ -34,8 +34,8 @@ function equal(){
 
 function zeroing(){
 
-    if(display.innerText == "0"){
-        display.innerText = "";
+    if(display.value == 0){
+        display.value = "";
     }
 
 }

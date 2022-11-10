@@ -1,9 +1,8 @@
 /**** Main Code ****/
 
-
 /* Start display value */
 
-display.innerText = "0";
+display.value = 0;
 
 /* Getting the number value from the button and adding into the calculator */
 
@@ -13,29 +12,29 @@ for(let i = 0; i <= 9; i++){
     
     number_btn.addEventListener("click", function(e){
             
-        e.preventDefault();
-
         zeroing();
     
-        display.innerText += Number(e.target.innerText);
+        display.value += Number(e.target.innerText);
+
     })
     
 }
 
-/* Getting the symbol value from the button and adding into the calculator */
+/* Getting the symbols value from the button and adding into the calculator */
 
-for(let i = 1; i <= 8; i++){
+for(let i = 0; i <= 2; i++){
     
     let symbol_btn = document.getElementById("symbol_" + i);
     
     symbol_btn.addEventListener("click", function(e){
-            
-        e.preventDefault();
-    
-        display.innerHTML += e.target.innerText;
+                
+        display.value += e.target.innerText;
+
     })
     
 }
+
+/* Calling Functions */
 
 reset();
 
