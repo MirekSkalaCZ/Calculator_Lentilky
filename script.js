@@ -1,30 +1,48 @@
-/**** Variables ****/
+/**** Main Code ****/
 
-/* Display */
 
-let display = document.getElementById("display");
+/* Start display value */
 
-/* Number Buttons */
-/*
-const btn_null = document.getElementById("btn_0");
-const btn_one = document.getElementById("btn_1");
-const btn_two = document.getElementById("btn_2");
-const btn_three = document.getElementById("btn_3");
-const btn_four = document.getElementById("btn_4");
-const btn_five = document.getElementById("btn_5");
-const btn_six = document.getElementById("btn_6");
-const btn_seven = document.getElementById("btn_7");
-const btn_eight = document.getElementById("btn_8");
-const btn_nine = document.getElementById("btn_9");
-*/
-/* Number Math Symbols */
+display.innerText = "0";
 
-let btns = document.querySelector(".btns");
+/* Getting the number value from the button and adding into the calculator */
 
-btns.addEventListener("click", function(e){
+for(let i = 0; i <= 9; i++){
+    
+    let number_btn = document.getElementById("btn_" + i);
+    
+    number_btn.addEventListener("click", function(e){
+            
+        e.preventDefault();
 
-    e.preventDefault();
-    console.log(Number(e.srcElement.innerText));
-})
+        zeroing();
+    
+        display.innerText += Number(e.target.innerText);
+    })
+    
+}
+
+/* Getting the symbol value from the button and adding into the calculator */
+
+for(let i = 1; i <= 8; i++){
+    
+    let symbol_btn = document.getElementById("symbol_" + i);
+    
+    symbol_btn.addEventListener("click", function(e){
+            
+        e.preventDefault();
+    
+        display.innerHTML += e.target.innerText;
+    })
+    
+}
+
+reset();
+
+equal();
+
+
+
+
 
 
