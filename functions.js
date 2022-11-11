@@ -103,7 +103,7 @@ reset();
 function percent(){
 
     btn_percent.addEventListener("click", function(){
-        display.value = eval(display.value / 100);
+        display.value = eval(display.value / 100).toFixed(2);
     })
 
 }
